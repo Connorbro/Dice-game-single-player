@@ -9,9 +9,13 @@ let rollingDice = function(){
 const myView={
     roll: document.getElementById('roll'),
     dice: {o: document.querySelector('.dice'), position:initial_Transformation_Position},
-    score: document.querySelector('.score')
+    score: document.querySelector('.score'),
+    updateMaDice: function(results)
+    {
+diceAnimator(this.dice)
 }
 
+}
 
 
 
