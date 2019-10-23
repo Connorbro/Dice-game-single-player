@@ -8,5 +8,6 @@ let diceAnimate = dice =>{
     dice.o.classList.add('spin')
 }
 let giveRes = (dice, value) =>{
-    
+    dice.o.classList.remove(dice.position);
+    void
 }
