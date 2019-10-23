@@ -9,5 +9,9 @@ let diceAnimate = dice =>{
 }
 let giveRes = (dice, value) =>{
     dice.o.classList.remove(dice.position);
-    void
+    void dice.o.offsetWidth;
+}
+if(value ===1){
+    dice.o.classList.add('show-top');
+    dice.position = 'show-top';
 }
