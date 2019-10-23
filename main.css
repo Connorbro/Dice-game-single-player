@@ -2,7 +2,7 @@ body{
     background-color: yellow;
     text-align: center;
     border: 50px;
-    border-block-color: green;
+    
     
 
 }
@@ -58,9 +58,12 @@ h2{
     top: 0;
     border-radius: 10px;
 }
-
-
-
-
-
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
+
+
+
+
