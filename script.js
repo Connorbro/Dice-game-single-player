@@ -1,4 +1,6 @@
 
+const LOSS = '1';
+const WIN = 20;
 
 
 
