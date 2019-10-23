@@ -87,7 +87,7 @@
 //     dice.position = 'show-bottom';
 //}
 function random_imglink(){
-    var myimages=new Array()
+    let myimages=new Array()
     //specify random images below. You can have as many as you wish
     myimages[1]="dice1.png"
     myimages[2]="dice2.png"
@@ -95,4 +95,10 @@ function random_imglink(){
     myimages[4]="dice4.png"
     myimages[5]="dice5.png"
     myimages[6]="dice6.png"
+    let ry=Math.floor(Math.random()*myimages.length)
+    if (ry==0)
+    ry=1
+    document.write('<img src="'+myimages[ry]+'" border=0>')
+    }
+    random_imglink()
 }
