@@ -11,7 +11,11 @@ let giveRes = (dice, value) =>{
     dice.o.classList.remove(dice.position);
     void dice.o.offsetWidth;
 }
-if(value ===1){
+if(value ==1){
     dice.o.classList.add('show-top');
     dice.position = 'show-top';
+}
+else if(value==2){
+    dice.position = add('show-left')
+    dice.position = 'show-left';
 }
