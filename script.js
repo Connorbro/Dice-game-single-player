@@ -21,7 +21,10 @@ updateScore:function(message) {
     this.score.textContent = message;
   },
 };
-
+const game = {
+    turn: function() {
+      let rollResult = [roll()];
+   
 
     
 
