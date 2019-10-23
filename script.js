@@ -2,7 +2,9 @@
 const LOSS = '1';
 const WIN = 20;
 const initial_Transformation_State = 'idle'
-let rollingDice = function(){}
+let rollingDice = function(){
+    let sides = 6;
+}
 
 
 
