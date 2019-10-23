@@ -1,3 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+
+getScore: function(results) {
+    let message = '';
+    if (results.toString() === WIN) {
+      message = `${WIN} You Win!`;
+    } else if (results.toString() === LOSS) {
+      message = `${LOSS} You Lose`;
+    } else if (results[0] === results[1] && results[1] === results[2]) {
+      message = `Trips! ${results[0]}`;
+    } else if (results[0] === results[1]) {
+      message = `You scored: ${results[2]}`;
+    } else if (results[1] === results[2]) {
+      message = `You scored: ${results[0]}`;
+    } else {
+      message = 'Roll again...';
+    }
+    return message;
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 view.roll.addEventListener('click',()=> Gamepad.turn(), false);
 let diceAnimate = dice =>{
     if(dice.position === 'idle'){
