@@ -19,3 +19,7 @@ else if(value==2){
     dice.position = add('show-left')
     dice.position = 'show-left';
 }
+else if(value==3){
+    dice.position = add('show-right')
+    dice.position = 'show-right';
+}
