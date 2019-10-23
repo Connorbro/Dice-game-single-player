@@ -4,6 +4,7 @@ let diceAnimate = dice =>{
         dice.o.classList.remove('idle')
     }
     dice.o.classList.remove('spin');
-    void dice.o.offsetWidth
+    void dice.o.offsetWidth;
+    dice.o.classList.add('spin')
 
 }
