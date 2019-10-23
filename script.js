@@ -31,3 +31,7 @@ else if(value==5){
     dice.o.classList = add('show-back')
     dice.position = 'show-back';
 }
+else if(value==6){
+    dice.o.classList = add('show-bottom')
+    dice.position = 'show-bottom';
+}
