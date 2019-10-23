@@ -16,10 +16,14 @@ if(value ==1){
     dice.position = 'show-top';
 }
 else if(value==2){
-    dice.position = add('show-left')
+    dice.o.classList = add('show-left')
     dice.position = 'show-left';
 }
 else if(value==3){
-    dice.position = add('show-right')
+    dice.o.classList = add('show-right')
     dice.position = 'show-right';
+}
+else if(value==4){
+    dice.o.classList = add('show-right')
+    dice.position = 'show-front';
 }
