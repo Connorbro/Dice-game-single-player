@@ -1,10 +1,14 @@
 
 const LOSS = '1';
 const WIN = 20;
-const initial_Transformation_State = 'idle'
+const initial_Transformation_Position = 'idle'
 let rollingDice = function(){
     let sides = 6;
     return Math.floor(sides * Math.random())+1;
+};
+const myView={
+    roll: document.getElementById('roll'),
+    dice: {o: document.querySelector('.dice'), position:initial_Transformation_Position}
 }
 
 
