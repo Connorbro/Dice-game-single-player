@@ -1,7 +1,7 @@
 
 const LOSS = '1';
-const WIN = 20;
-const initial_Transformation_Position = 'idle'
+const WIN = '';
+
 let rollingDice = function(){
     let sides = 6;
     return Math.floor(sides * Math.random())+1;
@@ -15,7 +15,7 @@ const myView={
 diceAnimator(this.dice),
 setTimeout(()=>{
     showResult(this.dice, results[0]);
-},820)},
+})},
 
 updateScore:function(message) {
     this.score.textContent = message;
@@ -48,21 +48,7 @@ const game = {
     }
     return message;
     },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+};
 view.roll.addEventListener('click',()=> Gamepad.turn(), false);
 let diceAnimate = dice =>{
     if(dice.position === 'idle'){
@@ -72,7 +58,7 @@ let diceAnimate = dice =>{
     void dice.o.offsetWidth;
     dice.o.classList.add('spin')
 }
-let giveRes = (dice, value) =>{
+let giveRes = (dice) =>{
     dice.o.classList.remove(dice.position);
     void dice.o.offsetWidth;
 }

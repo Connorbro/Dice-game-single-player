@@ -42,6 +42,8 @@ h2{
 
 .glow-on-hover:active:after {
     background: transparent;
+        margin-top: 50px;
+      
 }
 
 .glow-on-hover:hover:before {
