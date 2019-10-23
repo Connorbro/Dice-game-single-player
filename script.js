@@ -13,6 +13,9 @@ const myView={
     updateMaDice: function(results)
     {
 diceAnimator(this.dice)
+setTimeout()
+
+
 }
 
 }
