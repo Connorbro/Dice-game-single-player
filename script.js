@@ -6,5 +6,7 @@ let diceAnimate = dice =>{
     dice.o.classList.remove('spin');
     void dice.o.offsetWidth;
     dice.o.classList.add('spin')
-
+}
+let giveRes = (dice, value) =>{
+    
 }
