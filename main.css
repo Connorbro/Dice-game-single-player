@@ -20,6 +20,7 @@ h2{
     cursor: pointer;
     position: relative;
     font-size:20px;
+    align-content: center;
 }
 .glow-on-hover:before {
     content: '';

@@ -1,104 +1,44 @@
+let total = 0;
 
-// const LOSS = '1';
-// const WIN = '';
+function randomImg1() {
+    let myImages1 = new Array();
+    myImages1[0] = "dice1.png";
+    myImages1[1] = "dice2.png";
+    myImages1[2] = "dice3.png";
+    myImages1[3] = "dice4.png";
+    myImages1[4] = "dice5.png";
+    myImages1[5] = "dice6.png";
+    console.log(myImages1)
 
-// let rollingDice = function(){
-//     let sides = 6;
-//     return Math.floor(sides * Math.random())+1;
-// };
-// const myView={
-//     roll: document.getElementById('roll'),
-//     dice: {o: document.querySelector('.dice'), position:initial_Transformation_Position},
-//     score: document.querySelector('.score'),
-//     updateMaDice: function(results)
-//     {
-// diceAnimator(this.dice),
-// setTimeout(()=>{
-//     showResult(this.dice, results[0]);
-// })},
-
-// updateScore:function(message) {
-//     this.score.textContent = message;
-//   },
-// };
-// const game = {
-//     turn: function() {
-//       let rollResult = [roll()];
-//       let resultSorted = [...rollResult].sort(); 
-//       view.updateDice(rollResult);
-//       setTimeout(()=>{
-//         view.updateScore(this.getScore(resultSorted));
-//       }, 1000);
-//     },
-
-//     getScore: function(results) {
-//     let message = '';
-//     if (results.toString() === WIN) {
-//       message = `${WIN} You Win!`;
-//     } else if (results.toString() === LOSS) {
-//       message = `${LOSS} You Lose`;
-//     } else if (results[0] === results[1] && results[1] === results[2]) {
-//       message = `Trips! ${results[0]}`;
-//     } else if (results[0] === results[1]) {
-//       message = `You scored: ${results[2]}`;
-//     } else if (results[1] === results[2]) {
-//       message = `You scored: ${results[0]}`;
-//     } else {
-//       message = 'Roll again...';
-//     }
-//     return message;
-//     },
-// };
-// view.roll.addEventListener('click',()=> Gamepad.turn(), false);
-// let diceAnimate = dice =>{
-//     if(dice.position === 'idle'){
-//         dice.o.classList.remove('idle')
-//     }
-//     dice.o.classList.remove('spin');
-//     void dice.o.offsetWidth;
-//     dice.o.classList.add('spin')
-// }
-// let giveRes = (dice) =>{
-//     dice.o.classList.remove(dice.position);
-//     void dice.o.offsetWidth;
-// }
-// if(value ==1){
-//     dice.o.classList.add('show-top');
-//     dice.position = 'show-top';
-// }
-// else if(value==2){
-//     dice.o.classList = add('show-left')
-//     dice.position = 'show-left';
-// }
-// else if(value==3){
-//     dice.o.classList = add('show-right')
-//     dice.position = 'show-right';
-// }
-// else if(value==4){
-//     dice.o.classList = add('show-front')
-//     dice.position = 'show-front';
-// }
-// else if(value==5){
-//     dice.o.classList = add('show-back')
-//     dice.position = 'show-back';
-// }
-// else if(value==6){
-//     dice.o.classList = add('show-bottom')
-//     dice.position = 'show-bottom';
-//}
-function random_imglink(){
-    let myimages=new Array()
-    //specify random images below. You can have as many as you wish
-    myimages[1]="dice1.png"
-    myimages[2]="dice2.png"
-    myimages[3]="dice3.png"
-    myimages[4]="dice4.png"
-    myimages[5]="dice5.png"
-    myimages[6]="dice6.png"
-    let ry=Math.floor(Math.random()*myimages.length)
-    if (ry==0)
-    ry=1
-    document.write('<img src="'+myimages[ry]+'" border=0>')
+    let rnd = Math.ceil(Math.random() * myImages1.length);
+    let image = document.getElementById("imageid")
+    // let button = document.getElementsByClassName("glow-on-hover")
+    total = total+ rnd
+    document.getElementById("numbers").innerHTML = `Random = ${rnd} <br> Total = ${total}<br>`
+    if(total >= 20){
+        document.getElementById("numbers").innerHTML += `you win`
     }
-    random_imglink()
+    else {
+        if (rnd == 1) {
+            image.src = "dice1.png"
+            total = 0
+            document.getElementById("numbers").innerHTML += `you lose`
+        }
+        if (rnd == 2) {
+            image.src = "dice2.png"
+        }
+        if (rnd == 3) {
+            image.src = "dice3.png"
+        }
+        if (rnd == 4) {
+            image.src = "dice4.png"
+        }
+        if (rnd == 5) {
+            image.src = "dice5.png"
+        }
+        if (rnd == 6) {
+            image.src = "dice6.png"
+        }
+    }
 }
+
