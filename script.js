@@ -13,12 +13,15 @@ const myView={
     updateMaDice: function(results)
     {
 diceAnimator(this.dice)
-setTimeout()
-
-
-}
+setTimeout(()=>{
+    showResult(this.dice, results[0]);
 
 }
+
+    
+
+
+
 
 
 
