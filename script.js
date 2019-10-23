@@ -24,6 +24,10 @@ else if(value==3){
     dice.position = 'show-right';
 }
 else if(value==4){
-    dice.o.classList = add('show-right')
+    dice.o.classList = add('show-front')
     dice.position = 'show-front';
+}
+else if(value==5){
+    dice.o.classList = add('show-back')
+    dice.position = 'show-back';
 }
