@@ -11,5 +11,12 @@ h2{
     font-size: 77px;
 }
 .glow-on-hover{
-    
+    width: 100px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    background: yellowgreen;
+    cursor: pointer;
+    position: relative;
 }
