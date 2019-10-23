@@ -4,6 +4,7 @@ const WIN = 20;
 const initial_Transformation_State = 'idle'
 let rollingDice = function(){
     let sides = 6;
+    return Math.floor(sides * Math.random())+1;
 }
 
 
