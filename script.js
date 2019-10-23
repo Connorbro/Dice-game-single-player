@@ -24,7 +24,12 @@ updateScore:function(message) {
 const game = {
     turn: function() {
       let rollResult = [roll()];
-   
+      let resultSorted = [...rollResult].sort(); 
+      view.updateDice(rollResult);
+      setTimeout(()=>{
+        view.updateScore(this.getScore(resultSorted));
+      }, 1000);
+    }
 
     
 
