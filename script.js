@@ -12,17 +12,18 @@ const myView={
     score: document.querySelector('.score'),
     updateMaDice: function(results)
     {
-diceAnimator(this.dice)
+diceAnimator(this.dice),
 setTimeout(()=>{
     showResult(this.dice, results[0]);
+},820)},
 
-}
+updateScore:function(message) {
+    this.score.textContent = message;
+  },
+};
+
 
     
-
-
-
-
 
 
 
