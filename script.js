@@ -1,7 +1,7 @@
 
 const LOSS = '1';
 const WIN = 20;
-
+const initial_Transformation_State = 'idle'
 
 
 
