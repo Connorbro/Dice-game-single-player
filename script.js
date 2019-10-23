@@ -29,17 +29,9 @@ const game = {
       setTimeout(()=>{
         view.updateScore(this.getScore(resultSorted));
       }, 1000);
-    }
+    },
 
-    
-
-
-
-
-
-
-
-getScore: function(results) {
+    getScore: function(results) {
     let message = '';
     if (results.toString() === WIN) {
       message = `${WIN} You Win!`;
