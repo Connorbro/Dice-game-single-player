@@ -17,7 +17,10 @@ function randomImg1() {
     document.getElementById("numbers").innerHTML = `Random = ${rnd} <br> Total = ${total}<br>`
     if(total >= 20){
         document.getElementById("numbers").innerHTML += `you win`
-    }
+        total=0
+            
+        }
+    
     else {
         if (rnd == 1) {
             image.src = "dice1.png"
